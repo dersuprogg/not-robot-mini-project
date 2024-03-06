@@ -55,6 +55,10 @@ input {
   color: var(--dark-text-color);
 }
 
+.btn--submit {
+  text-decoration: none;
+}
+
 .colors-container {
   margin-top: 4rem;
   display: inline-grid;
