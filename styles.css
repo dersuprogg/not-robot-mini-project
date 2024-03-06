@@ -4,12 +4,42 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   line-height: 1.7;
   font-family: "DM Sans", sans-serif;
+  background-color: var(--dark-gray-color);
+  color: var(--light-text-color);
 }
 
 button,
 input {
   font-family: inherit;
+}
+
+:root {
+  --dark-gray-color: #0d1117;
+  --medium-gray-color: #161b22;
+  --light-gray-color: #1f242c;
+  --dark-text-color: #848d97;
+  --light-text-color: #e6edf3;
+  --border-color: #30363d;
+}
+
+.btn {
+  font-size: 2rem;
+  background-color: var(--light-gray-color);
+  border: 1px solid var(--border-color);
+  color: var(--light-text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.3em;
+}
+
+.btn--disabled {
+  pointer-events: none;
+  opacity: 0.7;
+  color: var(--dark-text-color);
 }
