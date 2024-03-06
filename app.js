@@ -18,10 +18,10 @@ function generateRandColor() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // colorText.textContent = generateRandColor();
   const colorPalette = [];
   for (let i = 0; i < 9; i++) {
     colorPalette.push(generateRandColor());
   }
-  console.log(colorPalette);
+  const selectedColor = chooseRandElement(colorPalette);
+  colorText.textContent = selectedColor;
 });
