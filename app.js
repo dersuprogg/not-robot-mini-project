@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   for (let i = 0; i < 9; i++) {
     colorBoxes[i].textContent = colorPalette[i];
+    colorBoxes[i].style.backgroundColor = colorPalette[i];
   }
 
   colorText.textContent = selectedColor;
