@@ -27,9 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const selectedColor = chooseRandElement(colorPalette);
 
   for (let i = 0; i < 9; i++) {
-    colorBoxes[i].textContent = colorPalette[i];
+    colorBoxes[i].firstElementChild.textContent = colorPalette[i];
     colorBoxes[i].style.backgroundColor = colorPalette[i];
   }
 
   colorText.textContent = selectedColor;
+  colorText.style.borderBottom = `4px solid ${selectedColor}`;
 });
