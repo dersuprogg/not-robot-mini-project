@@ -20,6 +20,10 @@ function generateRandColor() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  generateColorPalette();
+});
+
+function generateColorPalette() {
   const colorPalette = [];
   for (let i = 0; i < 9; i++) {
     colorPalette.push(generateRandColor());
@@ -33,4 +37,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   colorText.textContent = selectedColor;
   colorText.style.borderBottom = `4px solid ${selectedColor}`;
-});
+}
